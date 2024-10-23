@@ -32,7 +32,12 @@ public class Controllo extends Thread{
                 tent++;
                 stringNum = in.readLine();
                 intNum = Integer.parseInt(stringNum);
-                if(intNum == numero)
+                if(intNum > 100 || intNum < 0)
+                {
+                    out.writeBytes("!" + "\n" ); 
+                }
+                
+                else if(intNum == numero)
                 {
                     ind = true;
                     out.writeBytes("=" + "\n" );

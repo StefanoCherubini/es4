@@ -26,7 +26,11 @@ public class Main {
                 out.writeBytes(n + "\n");
                 ris=in.readLine();
                 
-                if(ris.equals("<"))
+                if(ris.equals("!"))
+                {
+                System.out.println("Inserire un numero da 0 a 100");
+                }
+                else if(ris.equals("<"))
                     System.out.println("Numero troppo piccolo");
                 else if(ris.equals(">"))
                     System.out.println("Numero troppo grande");
